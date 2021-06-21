@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_adicionar_livro"
+        android:title="Adicionar livro"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_adicionar_autor"
+        android:title="Adicionar autor"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_adicionar_editora"
+        android:title="Adicionar editora"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_adicionar_usuario"
+        android:title="Adicionar usuário"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_adicionar_livroautor"
+        android:title="Adicionar livro e autor"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sair"
+        android:title="Sair"
+        app:showAsAction="never" />
+</menu>

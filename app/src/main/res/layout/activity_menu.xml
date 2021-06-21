@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ActivityMenu">
+
+    <Button
+        android:id="@+id/buttonLivro"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_weight="2"
+        android:onClick="livros"
+        android:text="Livros"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAutor"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="2"
+        android:onClick="autores"
+        android:text="Autores"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEditora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLivro" />
+
+    <Button
+        android:id="@+id/buttonEditora"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="2"
+        android:onClick="editoras"
+        android:text="Editoras"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAutor" />
+
+    <Button
+        android:id="@+id/buttonUsuario"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="2"
+        android:onClick="usuarios"
+        android:text="Usuários(as)"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLivroAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEditora" />
+
+    <Button
+        android:id="@+id/buttonLivroAutor"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="2"
+        android:onClick="livauts"
+        android:text="Livros e autores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUsuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
